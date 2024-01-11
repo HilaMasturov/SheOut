@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+    />
+    <script
+      src="https://kit.fontawesome.com/e9d3e8b2fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/website.js"></script>
+    <script src="./js/editProduct.js"></script>
+    <title>SheOut</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="title">
+        <h1>SheOut</h1>
+      </div>
+      <div class="menu">
+        <div class="links">
+          <a href="./products.html">פריטים</a>
+          <a href="./contactTable.html">פניות</a>
+        </div>
+        <div class="search-input">
+          <input type="text" placeholder="חיפוש" class="search" />
+          <label><i class="fa-solid fa-magnifying-glass fa-beat"></i></label>
+        </div>
+        <div class="round-buttons">
+          <button><i class="fa-regular fa-heart"></i></button>
+          <button id="orders_button">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+          <button id="home_button"><i class="fa-solid fa-house"></i></button>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <main class="container">
+        <h2>עריכת פריט</h2>
+        <form id="productForm">
+          <div>
+            <label for="name">שם המוצר:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="description">תאור המוצר:</label>
+            <textarea id="description" name="description" required></textarea>
+          </div>
+
+          <div>
+            <label for="price">מחיר:</label>
+            <input type="number" id="price" name="price" required />
+          </div>
+
+          <div>
+            <label for="image">קישור לתמונה:</label>
+            <input type="text" id="image" name="image" />
+          </div>
+
+          <input type="submit" value="עריכת מוצר" />
+        </form>
+      </main>
+      <footer>
+        <div>
+          <a href="./about.html">אודות</a>
+        </div>
+        <div>
+          <a href="./contact.html">צור קשר</a>
+        </div>
+        <div>
+          <a>בלוג</a>
+        </div>
+        <div>
+          <div class="signup">
+            הירשם אלינו: <input type="email" placeholder="name@example.com" />
+            <button>שלח</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <button
+      id="scroll-to-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>

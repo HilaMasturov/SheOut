@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+    />
+    <script
+      src="https://kit.fontawesome.com/e9d3e8b2fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/website.js"></script>
+    <title>SheOut</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="title">
+        <h1>SheOut</h1>
+      </div>
+      <div class="menu">
+        <div class="links">
+          <a href="./products.html">פריטים</a>
+          <a href="./contactTable.html">פניות</a>
+        </div>
+        <div class="search-input">
+          <input type="text" placeholder="חיפוש" class="search" />
+          <label><i class="fa-solid fa-magnifying-glass fa-beat"></i></label>
+        </div>
+        <div class="round-buttons">
+          <button><i class="fa-regular fa-heart"></i></button>
+          <button id="orders_button">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+          <button id="home_button"><i class="fa-solid fa-house"></i></button>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <main class="about-page">
+        <h2>אודות</h2>
+        <p>
+          SheOut הוא חנות האופנה המובילה בתחום מכירת בגדי גברים ונשים בסגנון
+          אופנתי ומעודכן. אנו מתמחים בהצגת מגוון רחב של בגדים, מידות וגזרות
+          שונות עם דגש על איכות וסגנון.
+        </p>
+        <p>
+          באתר שלנו תוכלו למצוא בגדי ערב, חג, יום יום וגם אקססוריז לכל מיני
+          אירועים וצרכים. כל הבגדים עוצבו ויוצרו על מנת להעניק לכם חווית אופנה
+          מקצועית ומעודכנת.
+        </p>
+        <p>
+          אנו מאמינים בצוות המקצועיות שלנו ובחשיבות של שירות לקוחות מעולה.
+          המשלוחים שלנו מהירים ואמינים ואנחנו מבצעים מבצעים מדי פעם על מגוון
+          הבגדים שלנו.
+        </p>
+        <p>
+          אנחנו מעריכים את הקהילה שלנו ולכן נשמע מכם תמיד בכל שאלה או בקשה. תודה
+          על הצפייה ומקווים לראותכם בחנות שלנו בקרוב!
+        </p>
+      </main>
+      <footer>
+        <div>
+          <a href="./about.html">אודות</a>
+        </div>
+        <div>
+          <a href="./contact.html">צור קשר</a>
+        </div>
+        <div>
+          <a>בלוג</a>
+        </div>
+        <div>
+          <div class="signup">
+            הירשם אלינו: <input type="email" placeholder="name@example.com" />
+            <button>שלח</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <button
+      id="scroll-to-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>

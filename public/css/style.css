@@ -1,0 +1,454 @@
+
+*{
+    outline: none;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    direction: rtl;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #f2d6c0;
+    font-family: 'Varela Round';
+}
+h1{
+    font-size: 90px;
+}
+a{
+    text-decoration: none;
+}
+input{
+    font-family: 'Varela Round';
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-radius: 7px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    gap: 15px;
+    padding: 20px;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+}
+
+footer div:not(:last-child){
+    border-left: 1px solid #e4b98f;
+}
+
+footer a{
+    color: #000;
+}
+
+
+.title{
+    background: #e4b98f;
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    height: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    background: #d69b6f;
+    gap: 10px;
+}
+
+.menu .links{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 4;
+}
+.menu .links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+.menu .links a:hover{
+    background: #fddbd9;
+}
+
+.search-input{
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    flex-grow: 3;
+}
+
+.search-input input{
+    background: none;
+    border: 0px;
+    width: 100%;
+    font-family: 'Varela Round';
+    font-size: 16px;
+}
+.search-input i{
+    margin-left: 10px;
+}
+.round-buttons{
+    flex-grow: 4;
+    display: flex;
+    justify-content: end;
+    margin-left: 10px;
+    gap:10px;
+}
+
+.round-buttons button{
+    background: #fddbd9;
+    border: 0px;
+    font-size: 20px;
+    border-radius: 100%;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    color: #000;
+}
+.round-buttons button:hover{
+    font-size: 23px;
+    background-color: #e4b98f;
+}
+
+.content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+main{
+    margin: auto;
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item{
+    direction: rtl;
+    text-align: center;
+    width: 200px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 2px rgba(0 ,0, 0 , 0.25));
+    cursor: pointer;
+}
+
+.item img{
+    min-height: 300px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.item .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.item .name{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+div .signup{
+    background: black;
+    width: 90%;
+    height: 50px;
+    color: white;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  div .signup input{
+    direction: ltr;
+    text-align: center;
+    height: 100%;
+    width: 70%;
+    border-radius: 0;
+    background-color: #333;
+    border: none;
+    font-size: 18px;
+    color: white;
+  }
+
+
+  div .signup button{
+    height: 100%;
+    width: 10%;
+    font-family: 'Varela Round';
+    background: #333;
+    border: 0px;
+    color: white;
+  }
+  
+  #scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #9e683f;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+#scroll-to-top:hover {
+    background-color: #b37c51;
+}
+
+.main-page, .about-page{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.main-page p, .about-page p{
+    width: 90%;
+    font-size: 18px;
+}
+
+.contact-page{
+    width: 100%;
+}
+
+.contact-page form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #eee;
+}
+
+form{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+form div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+}
+
+.buttons{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buttons button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border:1px solid #000;
+    font-size: 18px;
+    color: #000;
+    background: #eee;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2; /* Gray background for table header */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Gray background for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
+}
+
+table tr td:last-child{
+    width: 150px;
+}
+
+.create-button{
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    font-size: 18px;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .title {
+      height: 100px;
+    }
+
+    aside{
+        display: none;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    footer div{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    footer div:not(:last-child){
+        border-left: none;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e4b98f;
+    }
+
+    div .signup{
+        width: 100%;
+      }
+
+    .item{
+        width: 100%;
+    }
+  
+    .menu {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .menu .links {
+        width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .search-input{
+        width: 100%;
+    }
+  
+    .round-buttons {
+      justify-content: center;
+    }
+  
+    .round-buttons button {
+      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      padding: 3px;
+    }
+    .main-page{
+        width: 90%;
+    }
+    .contact-page{
+        width: 90%;
+    }
+    .contact-page form{
+        margin: 0px;
+        padding: 0px;
+    }
+    .main-page, .about-page{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+      }
+  }
